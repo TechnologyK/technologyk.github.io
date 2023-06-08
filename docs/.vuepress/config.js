@@ -1,4 +1,5 @@
 import { defineUserConfig, defaultTheme } from "vuepress";
+import { searchPlugin } from "@vuepress/plugin-search";
 
 export default defineUserConfig({
   lang: "zh-CN",
@@ -7,4 +8,5 @@ export default defineUserConfig({
     lastUpdated: false,
     contributors: false,
   }),
+  plugins: [searchPlugin({})],
 });
